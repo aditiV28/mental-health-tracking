@@ -26,8 +26,10 @@ Getting Started
     PORT = 5000
 
 Docker Setup
-1. Clone the repository: git close <repository>
-2. Build and start the Docker containers:
+1. Clone the repository:
+       git close <repository>
+       Go to the root directory
+3. Build and start the Docker containers:
    docker-compose up --build
 
 The above command should install all required dependecies and start your server at http://localhost:3000
