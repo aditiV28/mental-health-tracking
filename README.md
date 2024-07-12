@@ -1,4 +1,5 @@
 Mental Health Tracker
+
 This project is a web application that allows users to log their daily mental health status and visualize their weekly/monthly trends. The application uses Google OAuth for user authentication and includes both frontend and backend components. The backend is built with Node.js and Express, and the frontend is built with React. Data is stored in an SQLite database, and the entire application is Dockerized for easy setup and deployment.
 
 Prerequisites
@@ -16,10 +17,12 @@ Getting Started
 8. After creating the credentials, you will get a Client ID and Client Secret.
 9. Create a .env file in the backend directory and add the following:
     GOOGLE_CLIENT_ID=<your-google-client-id>
+    
     GOOGLE_CLIENT_SECRET=<your-google-client-secret>
 10. Generate a session secret key for your application. You can use an online generator or Node.js to create a random string and add it to the .env file:
     node -e "console.log(require('crypto').randomBytes(32).toString('hex'));"
     SESSION_SECRET=<your-session-secret>
+    
     PORT = 5000
 
 Docker Setup
