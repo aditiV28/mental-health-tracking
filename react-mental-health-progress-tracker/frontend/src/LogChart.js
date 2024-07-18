@@ -1,5 +1,7 @@
 import React from 'react';
+import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const LogChart = ({logs}) => {
     const dates = logs.map(log => log.date);
